@@ -1,0 +1,52 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.program {
+  display: flex;
+  flex-direction: column;
+}
+
+.program__wrapper {
+  margin: 0;
+  padding: 20px;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.program__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px 30px 18px 20px;
+
+  background-color: $color-white-smoke;
+
+  &--slim {
+    margin-bottom: 20px;
+  }
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-lato;
+  color: $color-charcoal;
+}
+
+.program__link {
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.additional-card__title {
+  margin: 0 0 13px 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-nero;
+  text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.field {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}

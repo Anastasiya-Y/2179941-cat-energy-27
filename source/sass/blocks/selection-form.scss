@@ -1,0 +1,11 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.selection-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-form__note {
+  text-align: center;
+}

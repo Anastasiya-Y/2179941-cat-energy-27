@@ -1,0 +1,9 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.form-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 22px 80px 24px;
+}
