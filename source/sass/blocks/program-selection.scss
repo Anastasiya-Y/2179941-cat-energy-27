@@ -1,9 +1,6 @@
-@import "../global/variables.scss";
-@import "../global/fonts.scss";
-
 .program-selection {
   background-color: $color-apple;
-  background-image: url("/source/img/backgrounds/index-background-desktop1.jfif");
+  background-image: url("../img/backgrounds/program-selection-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,7 +8,7 @@
 .program-selection__wrapper {
   display: block;
   margin: 0;
-  padding: 27px 20px 0;
+  padding: 27px 20px 0 20px;
 
   text-align: center;
 }

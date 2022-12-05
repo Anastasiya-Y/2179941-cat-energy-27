@@ -1,6 +1,3 @@
-@import "../global/variables.scss";
-@import "../global/fonts.scss";
-
 .product-card {
   display: flex;
   flex-direction: column;
@@ -14,3 +11,11 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.product-card__characteristics {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $ff-lato;
+}
+
