@@ -1,0 +1,13 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 20px 0 20px;
+}
+
+.products__title {
+  margin: 0 0 49px 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}

@@ -1,0 +1,23 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 27px 20px 32px 20px;
+}
+
+.form-section__title {
+  margin: 0 0 37px 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-default-black;
+}
+
+.form-section__description {
+  margin: 0 0 39px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
