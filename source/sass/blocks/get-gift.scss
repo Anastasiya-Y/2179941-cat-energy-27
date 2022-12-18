@@ -1,6 +1,8 @@
 .get-gift {
   padding: 186px 50px 40px 50px;
 
+  text-align: center;
+
   background-color: $color-nobel;
   background-image: url("../img/backgrounds/cat-case.png");
   background-repeat: no-repeat;
@@ -12,6 +14,5 @@
   font-size: 16px;
   line-height: 20px;
   font-family: $ff-lato;
-  text-align: center;
   color: $color-default-white;
 }
