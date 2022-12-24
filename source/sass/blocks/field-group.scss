@@ -18,13 +18,91 @@
   }
 }
 
+.field-group__title {
+  margin: 0 0 35px 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .field-group__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.field-group__list--cat {
+  padding: 0 0 24px 0;
+}
+
+.field-group__list--radio {
+  color: $color-nero;
+  padding: 22px 0 19px 0;
+  display: grid;
+  gap: 13px;
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 25px 25px 28px;
+  }
+}
+
+.field-group__list--additional-options {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.field-group__list--owner-contacts {
+  padding: 26px 0 23px 0;
+}
+
 .field-group__item {
   margin: 0 0 14px 0;
   display: flex;
+}
+
+.field-group__form-label {
+  display: inline-block;
+  color: $color-charcoal;
+  margin: 0 13px 0 0;
+}
+
+.field-group__form-label--comment {
+  margin: 0 0 37px 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+  color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

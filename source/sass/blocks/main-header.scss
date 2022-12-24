@@ -1,11 +1,9 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: 65px;
   margin: 0;
   padding: 10px 0 17px 0;
 
   text-transform: uppercase;
-
-  background-color: $color-default-white;
 }

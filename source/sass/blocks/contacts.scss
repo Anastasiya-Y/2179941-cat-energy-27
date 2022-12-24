@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white-smoke;
@@ -16,7 +17,7 @@
   justify-content: space-between;
   padding: 26px 0 26px 0;
 
-  background-color: $color-default-white;
+  background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
     padding: 56px 40px 56px 40px;
@@ -26,6 +27,7 @@
   @media (min-width: $desktop-width) {
     width: 565px;
     padding: 56px 60px 56px 60px;
+    background-color: $color-default-white;
   }
 }
 

@@ -44,68 +44,70 @@
           <h1 class="form-section__title">Подбор программы</h1>
           <p class="form-section__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form-section__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="field-group">
-              <ul class="field-group__list">
-                <li class="field-group__item">
-                  <label class="form-label" for="cat-name">
-                    Имя:*
-                  </label>
-                  <input class="field" type="text" id="cat-name" name="cat-name" value="Барсик" placeholder="Укажите имя питомца" required>
-                </li>
-                <li class="field-group__item">
-                  <label class="form-label" for="cat-weight">
-                    Вес (кг):*
-                  </label>
-                  <input class="field" type="number" id="cat-weight" name="cat-weight" value="7" placeholder="Укажите вес питомца" required>
-                </li>
-                <li class="field-group__item">
-                  <label class="form-label" for="cat-age">
-                    Возраст (лет):
-                  </label>
-                  <input class="field" type="number" id="cat-age" name="cat-age" value="7" placeholder="Укажите возраст питомца">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="field-group desired-result">
-              <div class="field-group__wrapper">
-                <h2 class="visually-hidden">Желаемый результат от перехода на корм Cat Energy.</h2>
-                <ul class="field-group__list">
+            <div class="form-section__wrapper form-section__wrapper--cat-info">
+              <fieldset class="field-group">
+                <ul class="field-group__list field-group__list--cat">
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight loss" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Похудение</span>
+                    <label class="field-group__form-label" for="cat-name">
+                      Имя:*
                     </label>
+                    <input class="field" type="text" id="cat-name" name="cat-name" value="Барсик" placeholder="Укажите имя питомца" required>
                   </li>
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight gain">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Набор массы</span>
+                    <label class="field-group__form-label" for="cat-weight">
+                      Вес (кг):*
                     </label>
+                    <input class="field" type="number" id="cat-weight" name="cat-weight" value="7" placeholder="Укажите вес питомца" required>
                   </li>
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="desired-result" value="need your advice">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                    <label class="field-group__form-label" for="cat-age">
+                      Возраст (лет):
                     </label>
+                    <input class="field" type="number" id="cat-age" name="cat-age" value="7" placeholder="Укажите возраст питомца">
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-            <fieldset class="field-group owner-contacts">
-              <div class="owner-contacts__wrapper">
-                <h2 class="owner-contacts__title">Контактные данные (владельца кота)</h2>
-                <ul class="owner-contacts__list">
-                  <li class="owner-contacts__item owner-contacts__email">
-                    <label class="form-label" for="owner-email">
+              </fieldset>
+              <fieldset class="field-group">
+                <div class="field-group__wrapper">
+                  <h2 class="visually-hidden">Желаемый результат от перехода на корм Cat Energy.</h2>
+                  <ul class="field-group__list field-group__list--radio">
+                    <li class="field-group__item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight loss" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Похудение</span>
+                      </label>
+                    </li>
+                    <li class="field-group__item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight gain">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Набор массы</span>
+                      </label>
+                    </li>
+                    <li class="field-group__item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="need your advice">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+            </div>
+            <fieldset class="field-group">
+              <div class="field-group__wrapper">
+                <h2 class="field-group__title">Контактные данные (владельца кота)</h2> <!-- owner-contacts-->
+                <ul class="field-group__list field-group__list--owner-contacts">
+                  <li class="field-group__item field-group__email">
+                    <label class="field-group__form-label" for="owner-email">
                       E-mail:*
                     </label>
                     <input class="field" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" placeholder="Укажите e-mail владельца кота" required>
                   </li>
-                  <li class="owner-contacts__item owner-contacts__phone">
-                    <label class="form-label" for="owner-phone">
+                  <li class="field-group__item field-group__phone">
+                    <label class="field-group__form-label" for="owner-phone">
                       Телефон:*
                     </label>
                     <input class="field" type="tel" id="owner-phone" name="owner-phone" value="8 (960) 900-60-90" placeholder="Укажите телефон владельца кота" required>
@@ -113,10 +115,9 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="field-group comment">
-              <h2 class="visually-hidden">Комментарий.</h2>
-              <div class="comment__wrapper">
-                <label class="comment__label" for="comment-area">
+            <fieldset class="field-group"> <!-- comment-->
+              <div class="field-group__wrapper">
+                <label class="field-group__form-label field-group__form-label--comment" for="comment-area">
                   Комментарий
                 </label>
                 <textarea class="field" id="comment-area" name="comment-area" placeholder="Введите свой комментарий">
@@ -124,32 +125,32 @@
                 </textarea>
               </div>
             </fieldset>
-            <fieldset class="field-group additional-options">
-              <div class="additional-options__wrapper">
-                <h2 class="additional-options__title">Дополнительно</h2>
-                <ul class="additional-options__list">
-                  <li class="additional-options__item">
+            <fieldset class="field-group"> <!-- additional-options-->
+              <div class="field-group__wrapper">
+                <h2 class="field-group__title">Дополнительно</h2>
+                <ul class="field-group__list field-group__list--additional-options">
+                  <li class="field-group__item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="sugar substitute" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Сахарозаменитель</span>
                     </label>
                   </li>
-                  <li class="additional-options__item">
+                  <li class="field-group__item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="drinking water">
                       <span class="control-mark"></span>
                       <span class="control-label">Питьевая вода</span>
                     </label>
                   </li>
-                  <li class="additional-options__item">
+                  <li class="field-group__item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="milk">
                       <span class="control-mark"></span>
                       <span class="control-label">Молоко</span>
                     </label>
                   </li>
-                  <li class="additional-options__item">
+                  <li class="field-group__item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="vitamins">
                       <span class="control-mark"></span>
@@ -159,8 +160,10 @@
                 </ul>
               </div>
             </fieldset>
-            <button class="button button--selection" type="submit">Отправить заявку</button>
-            <span class="selection-form__note">* — Обязательные поля</span>
+            <div class="selection-form__group">
+              <button class="button button--selection" type="submit">Отправить заявку</button>
+              <span class="selection-form__note">* — Обязательные поля</span>
+            </div>
           </form>
         </section>
       </div>

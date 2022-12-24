@@ -46,3 +46,11 @@
     max-width: 340px;
   }
 }
+
+.form-section__wrapper--cat-info {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
