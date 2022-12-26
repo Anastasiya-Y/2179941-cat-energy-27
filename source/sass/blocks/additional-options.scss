@@ -1,6 +1,6 @@
 .additional-options__wrapper {
   margin: 0 0 34px 0;
-  padding: 0 20px 0 20px;
+  padding: 0;
 }
 
 .additional-options__title {
@@ -15,4 +15,6 @@
 
 .additional-options__list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

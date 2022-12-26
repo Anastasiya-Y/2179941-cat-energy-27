@@ -1,30 +1,88 @@
 .result {
-  display: flex;
-  flex-direction: column;
+  padding: 25px 0 40px 0;
+  overflow: hidden;
 
   background-color: $color-whisper;
-}
 
-.result__wrapper {
-  margin: 0;
-  padding: 25px 20px 40px 20px;
+  @media (min-width: $tablet-width) {
+    background-color: $color-default-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .result__title {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.result__info {
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+
+      width: 200vw;
+      height: 100%;
+
+      background-color: $color-whisper;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .result__description {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 
   font-size: 14px;
   line-height: 18px;
   font-family: $ff-lato;
   color: $color-charcoal;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .result__expense {
@@ -32,6 +90,17 @@
 
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    text-align: right;
+  }
 }
 
 .result__statistics-list {
@@ -64,4 +133,31 @@
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+}
+
+.result__slider {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+
+      width: 100vw;
+      height: 100%;
+
+      background-color: $color-whisper;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: none;
+    }
+  }
 }

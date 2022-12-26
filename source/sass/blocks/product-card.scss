@@ -3,6 +3,16 @@
   flex-direction: column;
 }
 
+.product-card--show-all {
+  .product-card__title {
+    margin: 0 0 30px 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .product-card__title {
   margin: 0 0 18px 0;
 
