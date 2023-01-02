@@ -1,3 +1,18 @@
+.additional-card {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 23px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 164px;
+    align-items: center;
+    margin: 0;
+  }
+}
+
 .additional-card__title {
   margin: 0 0 13px 0;
 
@@ -10,11 +25,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 161px;
   }
 }
 
@@ -24,14 +41,29 @@
   line-height: 14px;
   font-family: $ff-lato;
   color: $color-charcoal;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 284px;
+  }
+}
+
+.additional-card__button--order {
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }

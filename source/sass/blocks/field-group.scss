@@ -36,6 +36,38 @@
   }
 }
 
+.field-group__title--owner-contacts {
+  margin: 26px 0 35px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 71px 0 76px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 69px 0 76px 0;
+  }
+}
+
+.field-group__title--owner-contacts::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 0;
+  width: 31%;
+  height: 2px;
+  background-color: $color-apple;
+
+  @media (min-width: $tablet-width) {
+    width: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 51%;
+  }
+}
+
 .field-group__list {
   margin: 0;
   padding: 0;
@@ -44,6 +76,19 @@
 
 .field-group__list--cat {
   padding: 0 0 24px 0;
+  border-bottom: 1px solid $color-gainsboro;
+  display: grid;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 72px 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .field-group__list--radio {
@@ -51,20 +96,27 @@
   padding: 22px 0 19px 0;
   display: grid;
   gap: 13px;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $color-whisper-4;
+    padding: 25px 25px 29px 28px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 25px 25px 28px;
+    padding: 30px 25px 30px 28px;
   }
 }
 
 .field-group__list--additional-options {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 13px;
+  margin: 0 0 34px 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 32px 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,35 +126,156 @@
 }
 
 .field-group__list--owner-contacts {
-  padding: 26px 0 23px 0;
+  padding: 0 0 23px 0;
+  display: grid;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    padding: 0 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+    padding: 0 0 67px 0;
+  }
 }
 
 .field-group__item {
-  margin: 0 0 14px 0;
+  margin: 0;
   display: flex;
+  align-items: center;
+  min-height: 30px;
 }
 
 .field-group__form-label {
-  display: inline-block;
   color: $color-charcoal;
   margin: 0 13px 0 0;
 }
 
 .field-group__form-label--comment {
+  display: block;
   margin: 0 0 37px 0;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
   color: $color-default-black;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 76px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
   }
+}
+
+.field-group__form-label--comment::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 0;
+  width: 66%;
+  height: 2px;
+  background-color: $color-apple;
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+}
+
+.field-group__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+}
+
+.field-group__control-input {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-very-light-grey;
+  border-radius: 4px;
+}
+
+.field-group__control-mark {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $color-default-white;
+  border: 1px solid $color-very-light-grey;
+  border-radius: 50%;
+}
+
+.field-group__control-input[type="radio"]:checked + .field-group__control-mark::before {
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  width: 13px;
+  height: 13px;
+  background-color: $color-apple;
+  border-radius: 50%;
+  content: "";
+}
+
+.field-group__control-input[type="checkbox"] + .field-group__control-mark {
+  border-radius: 0;
+}
+
+.field-group__control-input[type="checkbox"]:checked + .field-group__control-mark::before {
+  position: absolute;
+  background-image: url("../img/icons/icon-checkbox.svg");
+  width: 18px;
+  height: 14px;
+  top: 25%;
+  left: 17%;
+  content: "";
+}
+
+.field-group__control-label {
+  align-self: center;
+}
+
+.field-group--additional-options {
+  padding: 22px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 0 0 0;
+  }
+}
+
+.field-group__title--additional-options {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 57px 0;
+  }
+}
+
+.field-group__title--additional-options::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 16px;
+  right: 0;
+  width: 61%;
+  height: 2px;
+  background-color: $color-apple;
+}
+
+.field-group__control--additional-options {
+  padding-left: 46px;
 }

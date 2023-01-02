@@ -12,24 +12,24 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-mobile" src="./img/icons/logo-mobile.svg" width="191" height="38" alt="На главную.">
         </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
-                <a href="index.html">
+                <a class="main-navigation__link main-navigation__link--form" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="main-navigation__item">
-                <a href="catalog.html">
+                <a class="main-navigation__link main-navigation__link--form" href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
               <li class="main-navigation__item main-navigation__item--current">
-                <a href="#">
+                <a class="main-navigation__link main-navigation__link--form main-navigation__link--current" href="#">
                   Подбор программы
                 </a>
               </li>
@@ -72,24 +72,24 @@
                   <h2 class="visually-hidden">Желаемый результат от перехода на корм Cat Energy.</h2>
                   <ul class="field-group__list field-group__list--radio">
                     <li class="field-group__item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight loss" checked>
-                        <span class="control-mark"></span>
-                        <span class="control-label">Похудение</span>
+                      <label class="field-group__control">
+                        <input class="visually-hidden field-group__control-input" type="radio" name="desired-result" value="weight loss" checked>
+                        <span class="field-group__control-mark"></span>
+                        <span class="field-group__control-label">Похудение</span>
                       </label>
                     </li>
                     <li class="field-group__item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="weight gain">
-                        <span class="control-mark"></span>
-                        <span class="control-label">Набор массы</span>
+                      <label class="field-group__control">
+                        <input class="visually-hidden field-group__control-input" type="radio" name="desired-result" value="weight gain">
+                        <span class="field-group__control-mark"></span>
+                        <span class="field-group__control-label">Набор массы</span>
                       </label>
                     </li>
                     <li class="field-group__item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="desired-result" value="need your advice">
-                        <span class="control-mark"></span>
-                        <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                      <label class="field-group__control">
+                        <input class="visually-hidden field-group__control-input" type="radio" name="desired-result" value="need your advice">
+                        <span class="field-group__control-mark"></span>
+                        <span class="field-group__control-label">Не знаю (Нужен ваш совет)</span>
                       </label>
                     </li>
                   </ul>
@@ -98,7 +98,7 @@
             </div>
             <fieldset class="field-group">
               <div class="field-group__wrapper">
-                <h2 class="field-group__title">Контактные данные (владельца кота)</h2> <!-- owner-contacts-->
+                <h2 class="field-group__title field-group__title--owner-contacts">Контактные данные (владельца кота)</h2> <!-- owner-contacts-->
                 <ul class="field-group__list field-group__list--owner-contacts">
                   <li class="field-group__item field-group__email">
                     <label class="field-group__form-label" for="owner-email">
@@ -120,41 +120,39 @@
                 <label class="field-group__form-label field-group__form-label--comment" for="comment-area">
                   Комментарий
                 </label>
-                <textarea class="field" id="comment-area" name="comment-area" placeholder="Введите свой комментарий">
-                  Расскажите обо всех повадках кота
-                </textarea>
+                <textarea class="field field--textarea" id="comment-area" name="comment-area" placeholder="Введите свой комментарий">Расскажите обо всех повадках кота</textarea>
               </div>
             </fieldset>
-            <fieldset class="field-group"> <!-- additional-options-->
+            <fieldset class="field-group field-group--additional-options"> <!-- additional-options-->
               <div class="field-group__wrapper">
-                <h2 class="field-group__title">Дополнительно</h2>
+                <h2 class="field-group__title field-group__title--additional-options">Дополнительно</h2>
                 <ul class="field-group__list field-group__list--additional-options">
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="sugar substitute" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Сахарозаменитель</span>
+                    <label class="field-group__control field-group__control--additional-options">
+                      <input class="visually-hidden field-group__control-input" type="checkbox" name="additional-options" value="sugar substitute" checked>
+                      <span class="field-group__control-mark"></span>
+                      <span class="field-group__control-label">Сахарозаменитель</span>
                     </label>
                   </li>
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="drinking water">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Питьевая вода</span>
+                    <label class="field-group__control">
+                      <input class="visually-hidden field-group__control-input" type="checkbox" name="additional-options" value="drinking water">
+                      <span class="field-group__control-mark"></span>
+                      <span class="field-group__control-label">Питьевая вода</span>
                     </label>
                   </li>
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="milk">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Молоко</span>
+                    <label class="field-group__control">
+                      <input class="visually-hidden field-group__control-input" type="checkbox" name="additional-options" value="milk">
+                      <span class="field-group__control-mark"></span>
+                      <span class="field-group__control-label">Молоко</span>
                     </label>
                   </li>
                   <li class="field-group__item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="additional-options" value="vitamins">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Витамины</span>
+                    <label class="field-group__control">
+                      <input class="visually-hidden field-group__control-input" type="checkbox" name="additional-options" value="vitamins">
+                      <span class="field-group__control-mark"></span>
+                      <span class="field-group__control-label">Витамины</span>
                     </label>
                   </li>
                 </ul>
@@ -218,14 +216,12 @@
               </li>
             </ul>
           </div>
-          <div class="footer__copyright">
-            <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="footer__copyright-text">HTML Academy</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
-                <path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/>
-              </svg>
-            </a>
-          </div>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer__copyright-text">HTML Academy</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
+              <path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

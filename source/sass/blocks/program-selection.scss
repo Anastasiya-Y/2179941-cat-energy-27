@@ -1,12 +1,12 @@
 .program-selection {
-  padding: 27px 0 20px 0;
+  padding: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    padding: 62px 150px 526px 90px;
+    padding: 62px 150px 0 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +66,6 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-default-white;
-  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
     color: $color-default-black;
