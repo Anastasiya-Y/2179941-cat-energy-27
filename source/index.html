@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="intro-wrapper">
       <div class="container">
         <header class="main-header">
-          <a class="main-header__logo" href="#">
-            <img class="main-header__logo-mobile" src="./img/icons/logo-mobile.svg" width="191" height="38" alt="На главную.">
+          <a class="main-header__logo" href="#" aria-label="Переход на главную страницу.">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/icons/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
+              <img class="main-header__logo-mobile" src="img/icons/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи.">
+            </picture>
           </a>
           <nav class="main-navigation main-navigation--opened">
             <button class="main-navigation__toggle" type="button">
@@ -46,7 +51,11 @@
               Подобрать программу
             </a>
           </div>
-          <img class="program-selection__image" src="./img/content/index-can-mobile.png" width="280" height="270" alt="Изображение банки Кэт Энерджи.">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/content/index/index-can-desktop.png 1x, img/content/index/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/index/index-can-tablet.png 1x, img/content/index/index-can-tablet@2x.png 2x">
+            <img class="program-selection__image" src="img/content/index/index-can-mobile.png" srcset="img/content/index/index-can-mobile@2x.png 2x"  width="280" height="270" alt="Изображение банки Кэт Энерджи."/>
+          </picture>
         </section>
       </div>
     </div>
@@ -127,7 +136,11 @@
               </div>
             </div>
             <div class="result__slider">
-              <img class="result__image-before" src="./img/content/cat-slider.png" width="280" height="256" alt="Фото кота Бориса до и после диеты на Cat Energy Slim.">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/content/index/cat-slider-desktop.png 1x, img/content/index/cat-slider-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/index/cat-slider-tablet.png 1x, img/content/index/cat-slider-tablet@2x.png 2x">
+                <img class="result__image" src="img/content/index/cat-slider-mobile.png" srcset="img/content/index/cat-slider-mobile@2x.png 2x"  width="280" height="256" alt="Фото кота Бориса до и после диеты на Cat Energy Slim."/>
+              </picture>
             </div>
           </div>
         </div>

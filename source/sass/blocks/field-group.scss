@@ -25,6 +25,8 @@
   font-weight: 400;
   text-transform: none;
 
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
@@ -33,6 +35,29 @@
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  span {
+    background-color: $color-default-white;
+    padding: 0 20px 0 20px;
+    margin: 0 -20px 0 -20px;
+    display: inline-flex;
+  }
+}
+
+.field-group__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 16px;
+  left: -100vw;
+  width: 200vw;
+  height: 2px;
+  background-color: $color-apple;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
   }
 }
 
@@ -40,31 +65,37 @@
   margin: 26px 0 35px 0;
   position: relative;
 
+  span {
+    max-width: 222px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 71px 0 76px 0;
+
+    span {
+      max-width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 69px 0 76px 0;
+
+    span {
+      max-width: 100%;
+    }
   }
 }
 
-.field-group__title--owner-contacts::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 16px;
-  right: 0;
-  width: 31%;
-  height: 2px;
-  background-color: $color-apple;
+.field-group__title--comment {
+  margin: 0 0 37px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 15%;
+    margin: 0 0 76px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 51%;
+    margin: 0 0 76px 0;
   }
 }
 
@@ -154,43 +185,6 @@
   margin: 0 13px 0 0;
 }
 
-.field-group__form-label--comment {
-  display: block;
-  margin: 0 0 37px 0;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
-  text-transform: none;
-  color: $color-default-black;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0 0 76px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
-.field-group__form-label--comment::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 16px;
-  right: 0;
-  width: 66%;
-  height: 2px;
-  background-color: $color-apple;
-
-  @media (min-width: $desktop-width) {
-    width: 80%;
-  }
-}
-
 .field-group__control {
   position: relative;
   display: flex;
@@ -263,17 +257,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 57px 0;
   }
-}
-
-.field-group__title--additional-options::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 16px;
-  right: 0;
-  width: 61%;
-  height: 2px;
-  background-color: $color-apple;
 }
 
 .field-group__control--additional-options {

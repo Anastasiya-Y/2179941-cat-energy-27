@@ -1,6 +1,13 @@
 .main-navigation {
   position: relative;
   width: auto;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .main-navigation__wrapper {
@@ -13,11 +20,11 @@
 .main-navigation__toggle {
   position: absolute;
   top: -20px;
-  right: 0;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 24px;
-  height: 16px;
+  height: 20px;
   cursor: pointer;
   border: none;
   background-color: $color-default-white;
@@ -32,7 +39,7 @@
 }
 
 .main-navigation--closed .main-navigation__toggle::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -25px;
   right: 0;
@@ -47,24 +54,13 @@
   box-shadow: 0 6px 0 0 fade($color-default-black, 30%), 0 12px 0 0 fade($color-default-black, 30%);
 }
 
-@media (max-width: $vp-767) {
-  .main-navigation--closed .main-navigation__item {
-    display: none;
-  }
-
-  .main-navigation--closed .main-navigation__item--current .main-navigation__link {
-    padding: 20px 0;
-    text-align: center;
-  }
-}
-
 .main-navigation--opened .main-navigation__toggle {
   top: -38px;
-  right: 0;
+  right: 20px;
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     top: 0;

@@ -1,13 +1,14 @@
 .additional-card {
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     margin: 0 0 23px 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 164px;
+    display: grid;
+    grid-template-columns: 35% 34% 27%;
+    gap: 0;
     align-items: center;
     margin: 0;
   }
@@ -56,9 +57,9 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    justify-content: space-between;
-    min-width: 284px;
+    display: grid;
+    grid-template-columns: 135px 45px;
+    gap: 1fr;
   }
 }
 
