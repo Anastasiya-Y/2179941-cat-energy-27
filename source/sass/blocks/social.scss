@@ -13,3 +13,16 @@
   gap: 24px;
   max-width: 132px;
 }
+
+.social__link {
+  color: $color-dim-gray;
+}
+
+.social__link:hover {
+  color: $color-apple;
+}
+
+.social__link:disabled {
+  color: $color-apple;
+  opacity: 0.3;
+}

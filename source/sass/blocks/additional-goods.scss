@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 25px 0 35px 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0 76px 0;
@@ -35,8 +36,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
     margin: 0 0 81px 0;
   }
 
@@ -79,12 +78,10 @@
   @media (min-width: $tablet-width) {
     border-right: 1px solid $color-very-light-grey;
     border-left: 1px solid $color-very-light-grey;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    margin: 0;
   }
 }
 

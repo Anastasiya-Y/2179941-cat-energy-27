@@ -85,10 +85,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $color-default-black;
-    text-align: left;
-    font-size: 60px;
-    line-height: 60px;
     margin: 0 0 40px 0;
   }
 }
@@ -109,10 +105,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $color-default-black;
-    text-align: left;
-    font-size: 20px;
-    line-height: 20px;
     margin: 0 0 52px 0;
   }
 }
@@ -122,6 +114,11 @@
 
   @media (min-width: $tablet-width) {
     transform: none;
+    max-width: 244px;
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

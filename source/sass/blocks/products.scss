@@ -6,10 +6,6 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
-
-  @media (min-width: $desktop-width) {
-    border: none;
-  }
 }
 
 .products__title {
@@ -26,8 +22,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
     margin: 0 0 84px 0;
   }
 }

@@ -56,27 +56,23 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      content: "";
-      position: absolute;
       top: 81px;
-      left: 446px;
+      left: unset;
+      right: 50px;
       width: 200px;
       height: 211px;
       background-image: url("../img/icons/slim-tablet.svg");
-      z-index: 2;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
-      content: "";
-      position: absolute;
       top: 41px;
       left: 52px;
+      right: unset;
       width: 100px;
       height: 106px;
       background-image: url("../img/icons/slim-desktop.svg");
-      z-index: 2;
     }
   }
 }
@@ -95,27 +91,23 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      content: "";
-      position: absolute;
       top: 91px;
-      left: 412px;
+      left: unset;
+      right: 28px;
       width: 268px;
       height: 200px;
       background-image: url("../img/icons/pro-tablet.svg");
-      z-index: 2;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
-      content: "";
-      position: absolute;
       top: 47px;
+      right: unset;
       left: 33px;
       width: 134px;
       height: 100px;
       background-image: url("../img/icons/pro-desktop.svg");
-      z-index: 2;
     }
   }
 }
@@ -135,8 +127,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
     margin: 0 0 73px 194px;
   }
 }
@@ -173,14 +163,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
     margin: 0 0 23px 0;
-    color: $color-default-black;
-
-    &::before {
-      display: none;
-    }
   }
 }
 
@@ -195,21 +178,25 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+.program__link:active {
+  opacity: 0.3;
 }
 
 .program__link--arrow {
   margin: 0 0 0 15px;
+  width: 24px;
+  height: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 25px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin: 0 0 0 25px;
+.program__link:hover {
+  &--arrow {
+    width: 32px;
+    height: 10px;
   }
 }

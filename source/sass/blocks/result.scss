@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 0;
+    margin: 0;
     border: none;
 
     font-size: 60px;
@@ -46,8 +46,6 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 76px 0;
 
-    font-size: 60px;
-    line-height: 60px;
     width: 100%;
     position: relative;
     z-index: 4;
@@ -102,9 +100,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 69px 0;
-
-    font-size: 16px;
-    line-height: 24px;
   }
 }
 
@@ -119,7 +114,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
     text-align: right;
     margin: 11px 0 0 0;
     gap: 9px;
@@ -128,9 +122,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    text-align: right;
-    display: flex;
     flex-direction: row;
     gap: 63px;
   }
@@ -155,7 +146,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 55px 0;
-    gap: 42px;
     flex-wrap: nowrap;
   }
 }
@@ -167,7 +157,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -187,11 +176,6 @@
     width: 162px;
     padding: 14px 10px 0 10px;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 162px;
-    padding: 14px 10px 0 10px;
-  }
 }
 
 .result__statistics-item::before {
@@ -206,11 +190,6 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    height: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 162px;
     height: 72px;
   }
@@ -234,9 +213,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 114px;
-    height: 30px;
-    left: 24px;
     background-color: $color-white-smoke;
   }
 }
@@ -259,9 +235,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 142px;
-    height: 30px;
-    left: 10px;
     background-color: $color-white-smoke;
   }
 }
@@ -275,13 +248,6 @@
   margin: 0 0 8px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 11px 0;
-
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: 0 0 11px 0;
 
     font-size: 30px;
@@ -312,9 +278,6 @@
 
   @media (min-width: $desktop-width) {
     background-color: $color-white-smoke;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0;
   }
 }
 

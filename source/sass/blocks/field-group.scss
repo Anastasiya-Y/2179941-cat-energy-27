@@ -11,11 +11,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .field-group__title {
@@ -28,11 +23,6 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -79,10 +69,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 69px 0 76px 0;
-
-    span {
-      max-width: 100%;
-    }
   }
 }
 
@@ -91,10 +77,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 76px 0;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: 0 0 76px 0;
   }
 }
@@ -118,7 +100,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    border: none;
   }
 }
 
@@ -145,13 +126,11 @@
   margin: 0 0 34px 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 61px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -190,6 +169,10 @@
   display: flex;
   align-items: center;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 5px 60px;
+  }
 }
 
 .field-group__control-input {
@@ -208,17 +191,40 @@
   background-color: $color-default-white;
   border: 1px solid $color-very-light-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
+
+.field-group__control:hover {
+  .field-group__control-mark {
+    border-color: $color-silver;
+  }
+}
+
+.field-group__control:disabled {
+  opacity: 0.3;
+}
+
 
 .field-group__control-input[type="radio"]:checked + .field-group__control-mark::before {
   position: absolute;
-  top: 7.5px;
-  left: 7.5px;
+  top: 7px;
+  left: 7px;
   width: 13px;
   height: 13px;
   background-color: $color-apple;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .field-group__control-input[type="checkbox"] + .field-group__control-mark {

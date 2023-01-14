@@ -12,17 +12,19 @@
     justify-content: space-between;
     padding: 58px 0 55px 0;
   }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 58px 0 55px 0;
-  }
 }
 
 .footer__link {
   padding: 39px 0 31px 0;
   text-decoration: none;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.footer__link:active {
+  opacity: 0.6;
 }
 
 .footer__social {
@@ -54,6 +56,20 @@
     max-width: 163px;
     justify-content: flex-end;
   }
+}
+
+.footer__copyright-link:hover {
+  svg {
+    color: $color-apple;
+  }
+}
+
+.footer__copyright-link:active {
+  svg {
+    color: $color-apple;
+  }
+
+  opacity: 0.3;
 }
 
 .footer__copyright-text {

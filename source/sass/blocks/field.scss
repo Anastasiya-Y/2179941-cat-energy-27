@@ -6,6 +6,7 @@
   padding: 14px 20px 13px 20px;
   flex-grow: 1;
   border: 1px solid $color-whisper-4;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -13,10 +14,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
     padding: 11px 20px 11px 20px;
   }
+}
+
+.field:hover {
+  border: 1px solid $color-very-light-grey;
+}
+
+.field:focus {
+  border-color: $color-charcoal;
+  outline: 1px solid $color-charcoal;
+}
+
+.field:invalid {
+  border-color: $color-light-coral;
+  outline: 1px solid $color-light-coral;
 }
 
 .field--textarea {
@@ -24,4 +37,16 @@
   width: 100%;
   padding: 9px 15px 9px 12px;
   min-height: 150px;
+}
+
+.field--email {
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 13px);
+    left: 15.65px;
+    width: 18px;
+    height: 13px;
+    background-image: url("../img/icons/icon-email.svg");
+  }
 }

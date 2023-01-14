@@ -26,7 +26,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 1px 15% 40px 15%;
-    border: none;
   }
 }
 
@@ -34,10 +33,6 @@
   border-top: 1px solid $color-whisper-3;
 
   @media (min-width: $tablet-width) {
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
     border: none;
   }
 }
@@ -72,15 +67,14 @@
       top: 163px;
       left: calc(50% - 30px);
       width: 60px;
-      height: 2px;
-      background-color: $color-light-grey;
     }
   }
 
   @media (min-width: $desktop-width) {
-    border: 2px solid $color-white-smoke;
     background-color: $color-default-white;
-    padding: 241px 15% 41px 15%;
+    padding: 0 15% 41px 15%;
+    align-self: end;
+    height: calc(100% - 81px);
   }
 }
 
@@ -110,12 +104,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .product-card__button {
@@ -124,10 +112,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 33px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 33px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -150,10 +136,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 17px 0;
-    font-size: 20px;
     line-height: 21px;
-    text-align: center;
-    max-width: 150px;
   }
 }
 
@@ -167,7 +150,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px 0;
+    margin: auto 0 23px 0;
   }
 }
 
@@ -189,18 +172,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 16px;
     text-align: center;
     padding: 6px 0 9px 0;
     border-bottom: 1px solid $color-very-light-grey;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
     padding: 5px 5px 8px 5px;
-    border-bottom: 1px solid $color-very-light-grey;
   }
 }
 
@@ -216,13 +194,6 @@
     line-height: 18px;
     text-align: center;
     max-width: 170px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
   }
 }
 
@@ -241,11 +212,6 @@
 
 .product-card__image {
   @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 172px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 161px;
     height: 172px;
   }
@@ -271,4 +237,13 @@
   @media (min-width: $tablet-width) {
     margin-top: 87px;
   }
+}
+
+.product-card__button--show-all:hover {
+  background-color: $color-whisper-3;
+}
+
+.product-card__button--show-all:active {
+  background-color: $color-whisper-3;
+  color: $color-charcoal-active;
 }
