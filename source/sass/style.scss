@@ -1,34 +1,32 @@
-// Vendor
-@import "./vendor/normalize.scss";
-
 // Global
-@import "./global/variables.scss";
+
 @import "./global/fonts.scss";
 @import "./global/reboot.scss";
-@import "./global/utils.scss";
+@import "./global/units.scss";
+@import "./global/variables.scss";
 @import "./global/container.scss";
 
 // Blocks
+
+@import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/main-navigation.scss";
-@import "./blocks/program-selection.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/promo.scss";
 @import "./blocks/button.scss";
 @import "./blocks/program.scss";
+@import "./blocks/header-intro.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/result.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/form-section.scss";
-@import "./blocks/field-group.scss";
-@import "./blocks/field.scss";
-@import "./blocks/desired-result.scss";
-@import "./blocks/owner-contacts.scss";
-@import "./blocks/comment.scss";
-@import "./blocks/additional-options.scss";
-@import "./blocks/products.scss";
-@import "./blocks/product-card.scss";
-@import "./blocks/additional-goods.scss";
-@import "./blocks/additional-card.scss";
-@import "./blocks/get-gift.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/address.scss";
 @import "./blocks/social.scss";
-@import "./blocks/intro-wrapper.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/basic-products.scss";
+@import "./blocks/card-product.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/block-product.scss";
+@import "./blocks/advertising.scss";
+@import "./blocks/form.scss";
+@import "./blocks/form-container.scss";

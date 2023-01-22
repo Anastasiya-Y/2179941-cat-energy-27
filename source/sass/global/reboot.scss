@@ -1,28 +1,10 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $ff-oswald;
-  color: $color-default-black;
-}
-
-body {
-  width: 100%;
-  min-width: 320px;
-  height: 100%;
-
-  background-color: $color-default-white;
+img {
+  max-width: 100%;
+  object-fit: contain;
 }

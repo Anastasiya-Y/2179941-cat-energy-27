@@ -1,24 +1,26 @@
 .button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  min-height: 40px;
-  padding: 7px;
+  margin: 0;
+  padding: 10px;
 
-  color: $color-default-white;
+  font-weight: 400;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: $color-apple;
   border: none;
-}
+  cursor: pointer;
 
-.button:hover {
-  background-color: $color-atlantis;
-}
+  &:hover {
+    background-color: $color-limeade;
+  }
 
-.button:active {
-  background-color: $color-atlantis;
-  color: $color-white-active;
+  &:active {
+    color: rgba($color-white, 30%);
+
+    background-color: $color-limeade;
+  }
 }

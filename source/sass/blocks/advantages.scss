@@ -1,241 +1,150 @@
 .advantages {
-  padding: 0 0 49px 0;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
 .advantages__list {
-  display: grid;
-  grid-template-rows: minmax(60px, max-content);
-  gap: 20px;
   margin: 0;
   padding: 0;
-  max-width: 400px;
 
   list-style-type: none;
+  font-family: $ff-lato;
+  color: $color-charcoal;
+
+  counter-reset: program-counter;
 
   @media (min-width: $tablet-width) {
-    gap: 37px 153px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
+    display: grid;
+
+    gap: 37px 171px;
+    grid-template-columns: 30% 32%;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 6.4%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    gap: 6.3%;
   }
 }
 
 .advantages__item {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $ff-lato;
-  color: $color-charcoal;
-  padding: 0 0 0 80px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding: 151px 44px 57px 0;
-  }
+  min-height: 60px;
+  margin-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
-    padding: 151px 0 57px 0;
-  }
-}
+  counter-increment: program-counter;
 
-.advantages__item--nutrients {
   &::before {
+    @media (min-width: $tablet-width) {
+      content: counter(program-counter);
+      position: absolute;
+      top: 130px;
+      left: 115px;
+      z-index: -1;
+
+      font-size: 280px;
+      font-family: $ff-oswald;
+      color: $color-white-smoke;
+    }
+  }
+
+  &--healthy::after,
+  &--simply::after,
+  &--tasty::after,
+  &--fast::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+
     width: 60px;
     height: 60px;
-    background-image: url("../img/icons/nutrients-mobile.svg");
-    z-index: 1;
+
+    background-color: $color-apple;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--healthy::after {
+    background-image: url("../img/background/advantages-leaf.svg");
+  }
+
+  &--simply::after {
+    background-image: url("../img/background/advantages-tub.svg");
+  }
+
+  &--tasty::after {
+    background-image: url("../img/background/advantages-eat.svg");
+  }
+
+  &--fast::after {
+    background-image: url("../img/background/advantages-alarm.svg");
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-image: url("../img/icons/nutrients-tablet.svg");
-    }
+    min-height: 280px;
+    margin-bottom: 0;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 40px;
-      left: 100%;
-      width: 112px;
-      height: 280px;
-      background-image: url("../img/icons/1-tablet.svg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url("../img/icons/nutrients-desktop.svg");
-    }
-
-    &::after {
-      background-image: url("../img/icons/1-desktop.svg");
-      transform: translateX(-100%);
+  &:last-of-type .advantages__description {
+    @media (min-width: $tablet-width) {
+      min-width: 250px;
     }
   }
 }
 
-.advantages__item--powder {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icons/powder-mobile.svg");
-    z-index: 1;
+.advantages__description {
+  margin: 0;
+  padding: 0 0 0 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    padding-top: 150px;
+    padding-left: 0;
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-image: url("../img/icons/powder-tablet.svg");
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 40px;
-      left: 112px;
-      width: 134px;
-      height: 280px;
-      background-image: url("../img/icons/2-tablet.svg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url("../img/icons/powder-desktop.svg");
-    }
-
-    &::after {
-      left: 100%;
-      width: 112px;
-      background-image: url("../img/icons/2-desktop.svg");
-      transform: translateX(-100%);
-    }
-  }
-}
-
-.advantages__item--food-change {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icons/food-change-mobile.svg");
-    z-index: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-image: url("../img/icons/food-change-tablet.svg");
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 40px;
-      left: 113px;
-      width: 134px;
-      height: 280px;
-      background-image: url("../img/icons/3-tablet.svg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url("../img/icons/food-change-desktop.svg");
-    }
-
-    &::after {
-      left: 100%;
-      background-image: url("../img/icons/3-desktop.svg");
-      transform: translateX(-100%);
-    }
-  }
-}
-
-.advantages__item--total {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icons/total-mobile.svg");
-    z-index: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      top: 40px;
-      width: 80px;
-      height: 80px;
-      background-image: url("../img/icons/total-tablet.svg");
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 40px;
-      left: 113px;
-      width: 136px;
-      height: 280px;
-      background-image: url("../img/icons/4-tablet.svg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url("../img/icons/total-desktop.svg");
-    }
-
-    &::after {
-      left: 100%;
-      background-image: url("../img/icons/4-desktop.svg");
-      transform: translateX(-100%);
-    }
+    width: 100%;
+    padding-top: 152px;
   }
 }
