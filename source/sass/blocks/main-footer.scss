@@ -20,6 +20,16 @@
   }
 }
 
+.main-footer__social {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
 .main-footer__logo {
   display: block;
   margin: 0 auto;
